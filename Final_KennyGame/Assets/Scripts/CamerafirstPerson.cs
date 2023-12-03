@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CamerafirstPerson : MonoBehaviour
@@ -26,7 +27,7 @@ public class CamerafirstPerson : MonoBehaviour
         rotation.y = Input.GetAxis("Mouse Y") * sensibilidad * Time.deltaTime;
 
         rotation.y = Mathf.Clamp(rotation.y, yrotMin, xrotMin);
-        player.transform.Rotate(Vector3.up, rotation.x);
+        player.transform.Rotate(Vector3.up * rotation.x);
 
         transform.localRotation = Quaternion.Euler(rotation.y, 0, 0);
     }
