@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu Inicio.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Propotipo_ProBuilder.unity
+    guid: 615f66dbd57dcdc4baf081175c3f78e9
+  - enabled: 1
+    path: Assets/Scenes/Escna3Conassets.unity
+    guid: 9ce6c9d630704cf4e96f1108ee12b44a
   m_configObjects: {}

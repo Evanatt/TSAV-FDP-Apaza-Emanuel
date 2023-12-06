@@ -27,6 +27,7 @@ public class Playercontroller : MonoBehaviour
 
     bool isFalling = false;
 
+    public Mano grabbedObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -54,6 +55,10 @@ public class Playercontroller : MonoBehaviour
 
         // Activa el trigger de caída en el Animator
         anim.SetBool("isFalling", isFalling);
+        if (grabbedObject != null)
+        {
+            grabbedObject.MoveGrabbedObject();
+        }
     }
     private void Jump()
     {
